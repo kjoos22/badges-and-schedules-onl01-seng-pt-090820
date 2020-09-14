@@ -22,6 +22,7 @@ def assign_rooms(names)
   room_assignments
 end
 
+=begin
 def printer(names,)
   badges[] = batch_badge_creator(names)
   rooms[] = assign_rooms(names)
@@ -32,3 +33,14 @@ def printer(names,)
     puts room
   end
 end
+=end
+
+def printer(badges = batch_badge_creator(names), rooms = assign_rooms(names))
+  badges.each do |badge|
+    puts badge
+  end
+  rooms.each do |room|
+    puts room
+  end
+end
+  
