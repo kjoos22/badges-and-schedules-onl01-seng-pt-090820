@@ -21,3 +21,4 @@ def assign_rooms(names)
   end
   room_assignments
 end
+
